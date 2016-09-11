@@ -14,95 +14,40 @@ import {
   TextInput,
   ScrollView,
   ListView,
+  Navigator,
 } from 'react-native';
 
-
-class PizzaTranslator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {text: ''};
-  }
-
-  render() {
-    return (
-        <View style={{padding: 10}}>
-          <TextInput
-            autoCapitalize="characters"
-            style={{height: 40,padding:10,}}
-            placeholder={this.props.placeholder}
-            onChangeText={(text) => this.setState({text})}
-          />
-          <Text style={{padding: 10, fontSize: 42}}>
-            {this.state.text.split(' ').map((word) => word && '🍕').join(' ')}
-          </Text>
-        </View>
-    );
-  }
-}
+import MyScene from './MyScene';
 
 class AppTest extends Component {
-  constructor(props){
-    super(props);
-    const ds = new ListView.DataSource({
-      rowHasChanged:(r1,r2) => r1 !== r2
-    });
-    console.log(this.getMoviesFromApiAsync());
-    this.state = {
-      dataSource: ds.cloneWithRows([
-          'fuck'
-      ])
-    };
 
-    this.getMoviesFromApiAsync().then((responseJson) => {
-
-      console.log(responseJson.movies);
-      this.setState({
-        dataSource: ds.cloneWithRows(responseJson.movies),
-      });
-    });
-
-  }
   render() {
-    let pic = {
-      uri:'https://www.baidu.com/img/bd_logo1.png'
-    };
+    let defaultName = 'MyScene';
+    let defaultComponent = MyScene;
     return (
-      <View style={styles.container}>
-        <PizzaTranslator placeholder="请输入要转换的文字！"/>
-        <ListView
-          dataSource={this.state.dataSource}
-          renderRow={(rowData) => <View style={styles.lists}><Text>{rowData.title}</Text><Image source={pic} style={styles.images}/></View>}
-        />
-      </View>
+      <Navigator
+        //初始化route对象
+        initialRoute={{
+          name: defaultName,
+          component: defaultComponent   //route对象初始化赋值route.component为第一页（初始页）组件
+        }}
+
+        //Scene配置动画
+        configureScene={(route) => {
+          return Navigator.SceneConfigs.VerticalDownSwipeJump;
+        }}
+
+        //渲染Scene
+        renderScene={(route, navigator) => {
+          let Component = route.component;   //route对象中取出Component
+          return <Component
+            {...route.params}   //传递参数
+            navigator={navigator}   //将navigator组件传递给Component的props——this.props.navigator
+          />
+        }}
+      />
     );
   }
-  getMoviesFromApiAsync() {
-    return fetch('http://facebook.github.io/react-native/movies.json')
-      .then((response) => response.json())
-
-      .catch((error) => {
-        console.error(error);
-      });
-  }
 }
-
-const styles = {
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-around',
-    alignItems: 'stretch',
-  },
-  images: {
-    width:270*2,
-    height:129*2,
-  },
-  lists: {
-    height: 400,
-    flexDirection: 'column',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-  }
-};
 
 AppRegistry.registerComponent('AppTest', () => AppTest);
