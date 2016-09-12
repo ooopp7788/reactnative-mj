@@ -7,6 +7,8 @@
   },
   "dependencies": {
     "react": "15.3.1",
-    "react-native": "0.32.1"
+    "react-native": "0.32.1",
+    "react-native-fs": "^2.0.1-rc.2",
+    "react-native-media-player": "^0.2.1"
   }
 }
