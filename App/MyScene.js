@@ -31,7 +31,6 @@ export default class MyScene extends Component {
         dataSource: ds.cloneWithRows(responseJson.movies),
       });
     });
-
   }
 
   render() {
@@ -43,6 +42,7 @@ export default class MyScene extends Component {
       <View style={styles.container}>
         <Text onPress={this._pressButton.bind(this)} style={{padding: 10, fontSize: 42, textAlign: 'center'}}>导航下一页</Text>
         <PizzaTranslator placeholder="请输入要转换的文字！"/>
+        <Text style={{padding: 10, fontSize: 42, textAlign: 'center'}}>{'欢迎'+this.props.age+'岁的'+this.props.usr+'!'}</Text>
         <ListView
           dataSource={this.state.dataSource}
           renderRow={(rowData) => <View style={styles.lists}><Text>{rowData.title}</Text><Image source={pic} style={styles.images}/></View>}
@@ -64,11 +64,16 @@ export default class MyScene extends Component {
   //press事件处理
   _pressButton() {
     const {navigator} = this.props; //或者const navigator = this.props.navigator
+    console.log('props:',this.props);
 
     if(navigator) {
       navigator.push({
         name: 'Deatail',
         component: Detail,
+        param : {
+          age: 18,
+          usr: 'juicy'
+        }
       })
     }
   }

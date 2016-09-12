@@ -17,7 +17,7 @@ import {
   Navigator,
 } from 'react-native';
 
-import MyScene from './MyScene';
+import MyScene from './App/MyScene';
 
 class AppTest extends Component {
 
@@ -29,7 +29,11 @@ class AppTest extends Component {
         //初始化route对象
         initialRoute={{
           name: defaultName,
-          component: defaultComponent   //route对象初始化赋值route.component为第一页（初始页）组件
+          component: defaultComponent,   //route对象初始化赋值route.component为第一页（初始页）组件
+          param: {
+            age: 12,
+            usr: 'lmj'
+          }
         }}
 
         //Scene配置动画
@@ -41,7 +45,7 @@ class AppTest extends Component {
         renderScene={(route, navigator) => {
           let Component = route.component;   //route对象中取出Component
           return <Component
-            {...route.params}   //传递参数
+            {...route.param}   //传递参数
             navigator={navigator}   //将navigator组件传递给Component的props——this.props.navigator
           />
         }}

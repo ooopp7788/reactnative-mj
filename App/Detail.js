@@ -22,15 +22,21 @@ export default class Detail extends Component {
       navigator.push({
         name: 'Deatail',
         component: Detail,
+        param : {
+          age: 19,
+          usr: 'juicy'
+        }
       })
     }
   }
 
   render() {
+    
     return (
-      <View style={{flexDirection: 'row', justifyContent: 'center' ,alignItems: 'center'}}>
-        <Text style={{padding: 10, fontSize: 42, textAlign: 'center'}} onPress={this._backButton.bind(this)}>返回</Text>
-        <Text style={{padding: 10, fontSize: 42, textAlign: 'center'}} onPress={this._nextButton.bind(this)}>再进入一个Details</Text>
+      <View style={{flexDirection: 'column', justifyContent: 'center' ,alignItems: 'center'}}>
+          <Text style={{padding: 10, fontSize: 42, textAlign: 'center'}} onPress={this._backButton.bind(this)}>返回</Text>
+          <Text style={{padding: 10, fontSize: 42, textAlign: 'center'}} onPress={this._nextButton.bind(this)}>再进入一个Details</Text>
+          <Text style={{padding: 10, fontSize: 42, textAlign: 'center'}}>{'欢迎'+this.props.age+'岁的'+this.props.usr+'!'}</Text>
       </View>
     )
   }
