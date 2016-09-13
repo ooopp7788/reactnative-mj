@@ -20,7 +20,7 @@ export default class Detail extends Component {
 
     if(navigator) {
       navigator.push({
-        name: 'Deatail',
+        title: 'Detail',
         component: Detail,
         param : {
           age: 19,

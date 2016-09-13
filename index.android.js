@@ -7,6 +7,7 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
+  PixelRatio,
   StyleSheet,
   Text,
   View,
@@ -17,18 +18,18 @@ import {
   Navigator,
 } from 'react-native';
 
-import MyScene from './App/MyScene';
+import Index from './static/pages/Index';
 
 class AppTest extends Component {
 
   render() {
-    let defaultName = 'MyScene';
-    let defaultComponent = MyScene;
+    let defaultName = '首页';
+    let defaultComponent = Index;
     return (
       <Navigator
         //初始化route对象
         initialRoute={{
-          name: defaultName,
+          title: defaultName,
           component: defaultComponent,   //route对象初始化赋值route.component为第一页（初始页）组件
           param: {
             age: 12,
@@ -44,14 +45,34 @@ class AppTest extends Component {
         //渲染Scene
         renderScene={(route, navigator) => {
           let Component = route.component;   //route对象中取出Component
-          return <Component
-            {...route.param}   //传递参数
-            navigator={navigator}   //将navigator组件传递给Component的props——this.props.navigator
-          />
+          return (
+            <View style={styles.container}>
+              <View style={styles.header}>
+                <Text style={{fontSize: 32,alignSelf:'center',flex:1,marginTop: 27,}}>{route.title}</Text>
+              </View>
+              <Component
+                {...route.param}   //传递参数
+                navigator={navigator}   //将navigator组件传递给Component的props——this.props.navigator
+              />
+            </View>
+          )
+
         }}
       />
     );
   }
 }
+
+const styles = {
+  container: {
+    flex:1,
+    alignItems: 'stretch',
+  },
+  header: {
+    height: 96,
+    borderBottomColor: '#eee',
+    borderBottomWidth: 1,
+  },
+};
 
 AppRegistry.registerComponent('AppTest', () => AppTest);
