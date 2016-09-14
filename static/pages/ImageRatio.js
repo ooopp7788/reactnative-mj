@@ -37,12 +37,17 @@ export default class ImageRatio extends Component {
     
     return (
       <Image
-        source={{
-          uri:'https://www.baidu.com/img/bd_logo1.png',
-        }}
-        style={[this.props.style,this.state.style]}
+        {...this.props}
+        style={[styles.base,this.state.style]}
         onLayout={this.onImageLayout}
       />
     )
   }
 }
+
+const styles = {
+  base : {
+    flex:1,
+    resizeMode: Image.resizeMode.stretch,
+  }
+};

@@ -39,7 +39,7 @@ class AppTest extends Component {
 
         //Scene配置动画
         configureScene={(route) => {
-          return Navigator.SceneConfigs.VerticalDownSwipeJump;
+          return Navigator.SceneConfigs.HorizontalSwipeJump;
         }}
 
         //渲染Scene

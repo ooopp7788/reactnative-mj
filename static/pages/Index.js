@@ -6,6 +6,7 @@ import {
   Image,
   TextInput,
   PixelRatio,
+  Dimensions,
   ScrollView,
   ListView,
   Navigator,
@@ -19,20 +20,6 @@ import Swiper from 'react-native-swiper';
 export default class Index extends Component {
   constructor(props){
     super(props);
-    const ds = new ListView.DataSource({
-      rowHasChanged:(r1,r2) => r1 !== r2
-    });
-    this.state = {
-      dataSource: ds.cloneWithRows([
-          '暂无数据...'
-      ])
-    };
-    //List数据加载
-    this._getMoviesFromApiAsync().then((responseJson) => {
-      this.setState({
-        dataSource: ds.cloneWithRows(responseJson.movies),
-      });
-    });
   }
 
   render() {
@@ -87,7 +74,8 @@ export default class Index extends Component {
             </View>
             <View style={[index.col_outer,index.borderLeft]}>
               <View style={[index.col_inner,index.borderBottom]}>
-                <Text style={index.font18}>海外</Text>
+                <Text
+                  onPress={this._nextButton.bind(this)} style={index.font18}>下一页</Text>
               </View>
               <View style={index.col_inner}>
                 <Text style={index.font18}>周边</Text>
@@ -216,14 +204,19 @@ export default class Index extends Component {
     );
   }
 
-  //异步加载数据
-  _getMoviesFromApiAsync() {
-    return fetch('http://facebook.github.io/react-native/movies.json')
-    .then((response) => response.json())
+  _nextButton() {
+    const {navigator} = this.props; //或者const navigator = this.props.navigator
 
-    .catch((error) => {
-      console.error(error);
-    });
+    if(navigator) {
+      navigator.push({
+        title: 'Detail',
+        component: Detail,
+        param : {
+          age: 19,
+          usr: 'juicy'
+        }
+      })
+    }
   }
 
   //press事件处理
@@ -244,6 +237,7 @@ export default class Index extends Component {
 }
 
 const minP = 1/PixelRatio.get();
+//console.log('dimensions:',Dimensions.get());
 const index = {
   container: {
     backgroundColor: '#f8f8f8',
