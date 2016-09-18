@@ -20,6 +20,12 @@ import Swiper from 'react-native-swiper';
 export default class Index extends Component {
   constructor(props){
     super(props);
+    this.state = {
+      sliderImgs : [],
+      sliderNotes : [],
+      scrollNavs : [],
+      newVideos : [],
+    };
   }
 
   render() {
@@ -49,10 +55,10 @@ export default class Index extends Component {
       <ScrollView horizontal={false}>
       <View style={index.container}>
 
-        <Swiper style={index.wrapper} showsButtons={true} autoplay={true} height={160} showsPagination={false}>
-          <Image style={index.slide} source={{uri:sliderImgs[0]}}/>
-          <Image style={index.slide} source={{uri:sliderImgs[1]}}/>
-          <Image style={index.slide} source={{uri:sliderImgs[2]}}/>
+        <Swiper style={index.wrapper} showsButtons={true} autoplay={true} height={Dimensions.get('window').width/16*9} showsPagination={false}>
+          <ImageRatio ratio={16/9} style={index.slide} source={{uri:sliderImgs[0]}}/>
+          <ImageRatio ratio={16/9} style={index.slide} source={{uri:sliderImgs[1]}}/>
+          <ImageRatio ratio={16/9} style={index.slide} source={{uri:sliderImgs[2]}}/>
         </Swiper>
         <ImageRatio
           ratio={16/9}
@@ -204,6 +210,8 @@ export default class Index extends Component {
     );
   }
 
+  /*路由处理*/
+
   _nextButton() {
     const {navigator} = this.props; //或者const navigator = this.props.navigator
 
@@ -237,7 +245,7 @@ export default class Index extends Component {
 }
 
 const minP = 1/PixelRatio.get();
-//console.log('dimensions:',Dimensions.get());
+console.log(minP);
 const index = {
   container: {
     backgroundColor: '#f8f8f8',
@@ -248,10 +256,8 @@ const index = {
   },
   //Swiper
   wrapper: {
-    height:160,
   },
   slide: {
-    height:160,
     resizeMode: Image.resizeMode.stretch,
   },
 

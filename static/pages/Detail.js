@@ -19,7 +19,7 @@ export default class Detail extends Component {
     });
     this.state = {
       dataSource: ds.cloneWithRows([
-        '暂无数据...'
+
       ])
     };
   }
@@ -31,7 +31,7 @@ export default class Detail extends Component {
 
   //渲染ListView的row
   _renderRow(rowData, sectionid, rowid) {
-    console.log(rowData)
+    console.log(rowData,sectionid,rowid)
 
     return (
       <View style={styles.container}>
@@ -47,7 +47,7 @@ export default class Detail extends Component {
       </View>);
   }
 
-  _rendHeader() {
+  _renderHeader() {
     return (
       <View style={{flexDirection: 'column', justifyContent: 'center' ,alignItems: 'center'}}>
         <Text style={{padding: 10, fontSize: 42, textAlign: 'center'}} onPress={this._backButton.bind(this)}>返回</Text>
@@ -109,7 +109,17 @@ export default class Detail extends Component {
           dataSource={this.state.dataSource}
           renderRow={this._renderRow.bind(this)}
           //renderFooter={this._renderFooter.bind(this)}
-          renderHeader={this._rendHeader.bind(this)}
+          renderHeader={this._renderHeader.bind(this)}
+          renderSectionHeader= {
+            (sectionData,sectionID) => {
+              console.log(sectionData,sectionID)
+              return (
+                <View>
+                  <Text>{sectionID}</Text>
+                </View>
+              )
+            }
+          }
           //onResponderMove={(e)=> {this._onResponderMove(e)}}
           //onResponderRelease={(e)=> {this._onResponderRelease(e)}}
           //onEndReached={()=>{console.log('---');}}

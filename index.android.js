@@ -56,7 +56,6 @@ class AppTest extends Component {
               />
             </View>
           )
-
         }}
       />
     );
