@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
-        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.11.0/jars/classes.jar"
+        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-739f6c92211154188c09a017e252b00473abd7b2.jar" />
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-874d2e711d836a62341ce379265a50a9385c67f8.jar" />
     </item>
     <item
-        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.32.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-c9e1300339e992e61ae59a33ed63cebcc615bff3.jar" />
+        sha1="5273afae5d54f7a1e9bc4ce6b12588b81e73615d">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-eb50f5f2a3fca9cfa947d6288373aa452db5a2c5.jar" />
     </item>
     <item
         jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.11.0/jars/classes.jar"
@@ -23,11 +23,11 @@
         <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-b56912868e91fad743864fc4e7d97dd3360b995a.jar" />
     </item>
     <item
-        jar="/home/lmj/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jar="/home/lmj/.m2/repository/com/squareup/okio/okio/1.9.0/okio-1.9.0.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1-e6595c255b7b2d30d728dcc6e556ea1541968a2d.jar" />
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0-e25cc86625ab108a8e263ef00b3ec9a2cbd3a5e1.jar" />
     </item>
     <item
         jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.11.0/jars/classes.jar"
@@ -37,74 +37,11 @@
         <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-2dc6d4ecbb41f221ebf99f9c982c205ff8d36857.jar" />
     </item>
     <item
-        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.32.1/jars/libs/infer-annotations-1.5.jar"
+        jar="/home/lmj/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="008fcbba8c649528dab7dc52c6a94957f4cfb8f0">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-99c88999cd6595310a91c1f155c53f1b938de531.jar" />
-    </item>
-    <item
-        jar="/home/lmj/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="63994437f62bc861bc20c605d12962f7246116d1">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1-35877c7ad18fe99e8e53dbb6913a47ce6655186d.jar" />
-    </item>
-    <item
-        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-053114eb178f8e35a82edf57b1d0ed28352d4b38.jar" />
-    </item>
-    <item
-        jar="/home/lmj/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.1-b42d3e8367d49d36b03d0c1f3f192a1476310cac.jar" />
-    </item>
-    <item
-        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.11.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-89a6a69fcb868beb2f8a880e89f89b9c09772813.jar" />
-    </item>
-    <item
-        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-874d2e711d836a62341ce379265a50a9385c67f8.jar" />
-    </item>
-    <item
-        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.1-f2752b7685974c6c294cbe01dd401bf611900333.jar" />
-    </item>
-    <item
-        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ca63c521b5745ae9a09629d7ca67ff6bc2a967fe">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-9734c4ac99e4b07e2839ef9cb620f803d811499a.jar" />
-    </item>
-    <item
-        jar="/home/lmj/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0-fb3b4268328b877041fbf89effa4e53491b08f79.jar" />
-    </item>
-    <item
-        jar="/home/lmj/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0-e3f6c854233fd966ed0a0eed7e2780fc94101384.jar" />
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1-e6595c255b7b2d30d728dcc6e556ea1541968a2d.jar" />
     </item>
     <item
         jar="/home/lmj/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
@@ -114,25 +51,18 @@
         <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/library-2.4.0-4ffa970bc3ecb4b812fadd71c54019bc9e6c71af.jar" />
     </item>
     <item
-        jar="/home/lmj/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jar="/home/lmj/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.3/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1-4f1044978b5983e88fe8c395312c61a9b48eed2e.jar" />
+        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.3-18eefb5c53fe35aff1f01515af0971c0f751cd2d.jar" />
     </item>
     <item
-        jar="/home/lmj/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.11.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0-e85cddb01bb441249575b52db04213f8693e71b3.jar" />
-    </item>
-    <item
-        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-4f151fadfd6e8ce0249e17d47cb073492af0a9de.jar" />
+        sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-739f6c92211154188c09a017e252b00473abd7b2.jar" />
     </item>
     <item
         jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
@@ -142,18 +72,88 @@
         <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-ad9da65570ca1cb027c2e98d5cedf1be414bacbf.jar" />
     </item>
     <item
-        jar="/home/lmj/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.3/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar"
+        jar="/home/lmj/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.3-18eefb5c53fe35aff1f01515af0971c0f751cd2d.jar" />
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0-fb3b4268328b877041fbf89effa4e53491b08f79.jar" />
     </item>
     <item
-        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.32.1/jars/classes.jar"
+        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="5273afae5d54f7a1e9bc4ce6b12588b81e73615d">
-        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-eb50f5f2a3fca9cfa947d6288373aa452db5a2c5.jar" />
+        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-053114eb178f8e35a82edf57b1d0ed28352d4b38.jar" />
+    </item>
+    <item
+        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-89a6a69fcb868beb2f8a880e89f89b9c09772813.jar" />
+    </item>
+    <item
+        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-4f151fadfd6e8ce0249e17d47cb073492af0a9de.jar" />
+    </item>
+    <item
+        jar="/home/lmj/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1-35877c7ad18fe99e8e53dbb6913a47ce6655186d.jar" />
+    </item>
+    <item
+        jar="/home/lmj/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0-e3f6c854233fd966ed0a0eed7e2780fc94101384.jar" />
+    </item>
+    <item
+        jar="/home/lmj/.m2/repository/com/squareup/okhttp3/okhttp/3.4.1/okhttp-3.4.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1-3a3d389835b34d65fee24bdc3f5f8943001eadaa.jar" />
+    </item>
+    <item
+        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ca63c521b5745ae9a09629d7ca67ff6bc2a967fe">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-9734c4ac99e4b07e2839ef9cb620f803d811499a.jar" />
+    </item>
+    <item
+        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/classes-c9e1300339e992e61ae59a33ed63cebcc615bff3.jar" />
+    </item>
+    <item
+        jar="/home/lmj/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.1-b42d3e8367d49d36b03d0c1f3f192a1476310cac.jar" />
+    </item>
+    <item
+        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.32.1/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="008fcbba8c649528dab7dc52c6a94957f4cfb8f0">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-99c88999cd6595310a91c1f155c53f1b938de531.jar" />
+    </item>
+    <item
+        jar="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/home/lmj/MJs/RN/AppTest/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.1-f2752b7685974c6c294cbe01dd401bf611900333.jar" />
     </item>
 
 </items>
